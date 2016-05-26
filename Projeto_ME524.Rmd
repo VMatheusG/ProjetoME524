@@ -5,5 +5,7 @@ date: "26 de maio de 2016"
 output: html_document
 ---
 ```{r}
+arquivo.test = data.frame(read.csv(choose.files())) #lendo o arquivo test.csv
+freq.users = data.frame(table(arquivo.test$user_id)) #Imprimindo uma tabela de frequência para os usuários
 ```
 
